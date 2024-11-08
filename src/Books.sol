@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
 
-contract Books_Contract {
+contract Books {
 
     address owner;
 
@@ -12,7 +12,7 @@ contract Books_Contract {
         uint256 pages;
     }
 
-    Book public book
+    Book public book;
 
     modifier onlyOwner {
         require(msg.sender==owner,"You are not the Owner");
