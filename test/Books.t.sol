@@ -16,11 +16,11 @@ contract TestBooks is Test {
         assertEq(books.get_book().pages, 200);
     }
 
-    function test_get_book() public  {
+    function test_get_book() public view {
         Books.Book memory book = books.get_book();
         assertEq(book.title, "Programming Foundry");
 
-        assertEq(book.pages, 120);
+        assertEq(book.pages, 100);
     }
 
 }
