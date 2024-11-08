@@ -20,7 +20,7 @@ contract TestBooks is Test {
         Books.Book memory book = books.get_book();
         assertEq(book.title, "Programming Foundry");
 
-        assertEq(book.pages, 100);
+        assertEq(book.pages, 120);
     }
 
 }
