@@ -10,5 +10,6 @@ contract DeployBooks is Script {
     function run() public {
         vm.broadcast();
         books = new Books("Programming Foundry", "Cesar Garcia", 100);
+        console.log("Books deployed at address: ", address(books));
     }
 }
