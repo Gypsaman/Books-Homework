@@ -12,7 +12,7 @@ contract Books_Contract {
         uint256 pages;
     }
 
-    Book public book;
+    Book public book
 
     modifier onlyOwner {
         require(msg.sender==owner,"You are not the Owner");
